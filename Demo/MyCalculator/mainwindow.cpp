@@ -9,6 +9,11 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->lcdNumber->setPalette(Qt::green);
+    ui->lcdNumber->setDigitCount(8);
+    ui->lineEditNum1->setValidator(new QRegExpValidator(QRegExp("[0-9\.]+$")));
+    ui->lineEditNum2->setValidator(new QRegExpValidator(QRegExp("[0-9\.]+$")));
+    qDebug("Initial has been setup.");
+    // Initial Setup
 
 }
 
@@ -27,6 +32,7 @@ void MainWindow::on_Calculate_clicked()
         switch (index) {
         case 0:
             result = num1 + num2;
+            qDebug("add has done");
             break;
         case 1:
             result = num1 - num2;
@@ -47,11 +53,8 @@ void MainWindow::on_Calculate_clicked()
             break;
 
     }
-        ui->lineEditResult->setText(QString::number(result));
+        ui->lineEditResult->setText(QString::number(result,'g',8)); //QString::number(double n, char format = 'g', int precision = 6)
         ui->lcdNumber->display(result);
-
-
-
 }
 
 void MainWindow::on_Clear_clicked()
@@ -59,4 +62,10 @@ void MainWindow::on_Clear_clicked()
     ui->lineEditNum1->clear();
     ui->lineEditNum2->clear();
     ui->lineEditResult->clear();
+    ui->lcdNumber->display(0);
+}
+
+void MainWindow::on_Cal_clicked()
+{
+
 }
