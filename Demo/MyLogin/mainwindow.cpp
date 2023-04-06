@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QMessagebox>
 #include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -29,6 +28,8 @@ void MainWindow::on_pushButton_clicked()
             //hide();
             newDialog = new secDialog(this);
             newDialog->show();
+            ui->lineEditName->clear();
+            ui->lineEditPWD->clear();
         }
         else {
             QMessageBox::warning(this,"Login", "Username and password is not correct");
