@@ -10,6 +10,16 @@ calDialog::calDialog(QWidget *parent) :
     ui->lcdNumber->setPalette(Qt::green);
     ui->lcdNumber->setDigitCount(8);
 
+    // QRegExp rx("^-?(99|[1-7]?\\d(\\.\\d{1,2})?)$");
+    // QRegExp rx("^-?(180|1?[0-7]?\\d(\\.\\d{1,4})?)$");
+    // QRegExpValidator *pReg = new QRegExpValidator(rx, this);
+
+    QDoubleValidator *pReg = new QDoubleValidator(0, 100, 2, this);
+    pReg->setNotation(QDoubleValidator::StandardNotation);
+
+    ui->lineEditNum1->setValidator(pReg);
+    ui->lineEditNum2->setValidator(pReg);
+
 }
 
 
@@ -21,9 +31,6 @@ calDialog::~calDialog()
 
 void calDialog::on_Calculate_clicked()
 {
-    ui->lineEditNum1->setValidator(new QRegExpValidator(QRegExp("[0-9]+$")));
-    ui->lineEditNum2->setValidator(new QRegExpValidator(QRegExp("[0-9]+$")));
-    ui->lineEditResult->setValidator(new QRegExpValidator(QRegExp("[0-9]+$")));
     double num1 = ui->lineEditNum1->text().toDouble();//获取num1的值
     double num2 = ui->lineEditNum2->text().toDouble();//获取num2的值
       int index = ui->comboBox->currentIndex();       //获取下拉框的下标0 +, 1 - ,2 *, 3 /

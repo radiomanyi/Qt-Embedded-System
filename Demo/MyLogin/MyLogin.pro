@@ -15,15 +15,18 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     secdialog.cpp \
-    caldialog.cpp
+    caldialog.cpp \
+    thirddialog.cpp
 
 HEADERS  += mainwindow.h \
     secdialog.h \
-    caldialog.h
+    caldialog.h \
+    thirddialog.h
 
 FORMS    += mainwindow.ui \
     secdialog.ui \
-    caldialog.ui
+    caldialog.ui \
+    thirddialog.ui
 
 RESOURCES += \
     resource.qrc
