@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/lightoff.png</file>
+        <file>img/lighton.png</file>
+        <file>img/ledcontrol.gif</file>
+    </qresource>
+</RCC>

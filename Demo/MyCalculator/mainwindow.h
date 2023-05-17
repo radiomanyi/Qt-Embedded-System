@@ -20,6 +20,8 @@ private slots:
 
     void on_Clear_clicked();
 
+    void on_Cal_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -23,6 +23,12 @@
       <height>150</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
     <property name="title">
      <string>LoginApp</string>
     </property>
@@ -32,8 +38,14 @@
        <x>10</x>
        <y>110</y>
        <width>181</width>
-       <height>18</height>
+       <height>31</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Agency FB</family>
+       <pointsize>8</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>Login</string>
@@ -51,13 +63,26 @@
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
         <property name="text">
-         <string>User Name</string>
+         <string>UserName</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEditName"/>
+       <widget class="QLineEdit" name="lineEditName">
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
@@ -73,6 +98,12 @@
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
        <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Password</string>
         </property>
@@ -80,6 +111,12 @@
       </item>
       <item>
        <widget class="QLineEdit" name="lineEditPWD">
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
         <property name="echoMode">
          <enum>QLineEdit::Password</enum>
         </property>
@@ -101,9 +138,6 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <zorder>groupBox</zorder>
-   <zorder>label</zorder>
-   <zorder>label_pic</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
