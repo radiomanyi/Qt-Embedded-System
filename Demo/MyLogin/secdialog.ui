@@ -16,20 +16,59 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>100</y>
+     <x>90</x>
+     <y>110</y>
      <width>211</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Montserrat Light</family>
-     <pointsize>10</pointsize>
+     <family>Agency FB</family>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="text">
     <string>Welcome to the second Dialog</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>210</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>To Calculate</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>210</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>To Main</string>
    </property>
   </widget>
  </widget>

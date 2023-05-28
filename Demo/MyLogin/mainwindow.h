@@ -2,7 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMessageBox>
 #include "secdialog.h"
+#include "thirddialog.h"
 namespace Ui {
 class MainWindow;
 }
@@ -21,6 +23,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     secDialog *newDialog;
+    thirdDialog *thirDialog;
 };
 
 #endif // MAINWINDOW_H
