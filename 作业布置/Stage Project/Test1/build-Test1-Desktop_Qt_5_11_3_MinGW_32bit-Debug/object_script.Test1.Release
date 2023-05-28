@@ -1,0 +1,16 @@
+INPUT(
+./release\devicesettingwindow.o
+./release\homewindow.o
+./release\main.o
+./release\mainwindow.o
+./release\netsettingwindow.o
+./release\regeditwindow.o
+./release\sensordata.o
+./release\userdata.o
+./release\moc_devicesettingwindow.o
+./release\moc_homewindow.o
+./release\moc_mainwindow.o
+./release\moc_netsettingwindow.o
+./release\moc_regeditwindow.o
+./release\moc_userdata.o
+);
